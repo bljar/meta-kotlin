@@ -7,4 +7,8 @@ fun main(args: Array<String>) {
     val averageScore = totalScore / 3
     println(totalScore)
     println(averageScore)
+
+    val boostMultiplier= 4
+    val scoreBoost= totalScore * boostMultiplier
+    val finalBoostedScore = totalScore+scoreBoost
 }
