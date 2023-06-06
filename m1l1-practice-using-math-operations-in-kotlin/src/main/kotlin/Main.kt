@@ -1,3 +1,5 @@
 fun main(args: Array<String>) {
-    println(13530.0 / 1.23)
+    val scoreLevel1 = 79
+    val scoreLevel2 = 92
+    val scoreLevel3 = 86
 }
