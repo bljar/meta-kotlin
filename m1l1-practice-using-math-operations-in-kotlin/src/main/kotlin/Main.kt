@@ -11,4 +11,7 @@ fun main(args: Array<String>) {
     val boostMultiplier= 4
     val scoreBoost= totalScore * boostMultiplier
     val finalBoostedScore = totalScore+scoreBoost
+
+    println(scoreBoost)
+    println(finalBoostedScore)
 }
