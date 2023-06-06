@@ -1,4 +1,4 @@
-fun main() {
+fun Task1() {
     // 1.
     val weekday = "Friday"
     // 2.
@@ -19,4 +19,9 @@ fun main() {
     } else if (weekday == "Sunday") {
         println("8 AM to 4 PM")
     }
+}
+fun main() {
+    val weekday = "Friday"
+    val hour = 20
+
 }
