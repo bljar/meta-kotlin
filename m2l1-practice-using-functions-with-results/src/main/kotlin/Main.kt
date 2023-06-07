@@ -1,5 +1,5 @@
 //Add your function below this line
-fun getPoints() { }
+fun getPoints(basePoints: Int, boost: Int) { }
 fun main() {
     var score = 0;
     println(score)
