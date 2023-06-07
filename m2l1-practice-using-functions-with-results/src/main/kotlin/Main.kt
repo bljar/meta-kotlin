@@ -1,7 +1,15 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+//Add your function below this line
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    var score = 0;
+    println(score)
+    score += getPoints(10, 1)
+    println(score)
+    score += getPoints(20, 2)
+    println(score)
+    score += getPoints(-10, 1)
+    println(score)
+    score += getPoints(5, 3)
+    println(score)
+    score += getPoints(-15, 2)
 }
