@@ -7,4 +7,6 @@ class Player(val name: String, val surName: String) {
 fun main() {
     val P1 = Player("Nicola", "Tesla")
     val P2 = Player("Thomas", "Edison")
+
+    println(P1.fullName())
 }
