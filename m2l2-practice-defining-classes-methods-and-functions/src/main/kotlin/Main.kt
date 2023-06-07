@@ -1,3 +1,9 @@
+class Player(val name: String, val surName: String) {
+    fun fullName(): String {
+        return "$name $surName"
+    }
+}
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
