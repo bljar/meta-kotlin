@@ -5,9 +5,10 @@ class Student(
 )
 
 fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val students = listOf<Student>(
+        Student("John", 140.0, 223),
+        Student("Mark", 120.0, 548),
+        Student("Natali", 150.0, 342),
+        Student("Sara", 130.0, 781)
+    )
 }
