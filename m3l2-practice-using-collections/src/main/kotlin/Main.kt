@@ -1,3 +1,8 @@
+class Comment(
+    val userId: Int,
+    val message: String
+)
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
