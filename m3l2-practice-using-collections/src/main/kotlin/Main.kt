@@ -3,10 +3,12 @@ class Comment(
     val message: String
 )
 
-fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    var comments: List<Comment> = listOf(
+        Comment(5241, "Nice code"),
+        Comment(6624, "Like it"),
+        Comment(5224, "What's doing on?"),
+        Comment(9001, "Check out my website"),
+        Comment(8818, "Hello everyone, :)")
+    )
 }
