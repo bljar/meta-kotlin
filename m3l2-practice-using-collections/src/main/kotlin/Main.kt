@@ -18,7 +18,12 @@ fun main() {
     )
     for (comment in comments) {
         if (comment.userId !in blockedUserIds) {
-            println(comment)
+            val relation = userIdToRelation[comment.userId]
+            if (relation != null) {
+                println("${relation}: ${comment.message}")
+            } else {
+                println("unknown: ${comment.message}")
+            }
         }
     }
 }
