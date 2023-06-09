@@ -12,4 +12,8 @@ fun main() {
         Comment(8818, "Hello everyone, :)")
     )
     var blockedUserIds: Set<Int> = setOf(5524, 9001)
+    var userIdToRelation: Map<Int, String> = mapOf(
+        5241 to "Friend",
+        6624 to "Work Colleague"
+    )
 }
