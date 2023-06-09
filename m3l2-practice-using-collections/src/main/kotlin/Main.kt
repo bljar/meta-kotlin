@@ -1,4 +1,4 @@
-class Comment(
+data class Comment(
     val userId: Int,
     val message: String
 )
@@ -16,4 +16,9 @@ fun main() {
         5241 to "Friend",
         6624 to "Work Colleague"
     )
+    for (comment in comments) {
+        if (comment.userId !in blockedUserIds) {
+            println(comment)
+        }
+    }
 }
