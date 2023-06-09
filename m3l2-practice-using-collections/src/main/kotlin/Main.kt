@@ -11,4 +11,5 @@ fun main() {
         Comment(9001, "Check out my website"),
         Comment(8818, "Hello everyone, :)")
     )
+    var blockedUserIds: Set<Int> = setOf(5524, 9001)
 }
