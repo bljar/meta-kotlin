@@ -1,3 +1,5 @@
+# The bank account project
+
 ## Project overview
 In this course, you continually tested your skills in exercises, knowledge checks, and in-video questions. 
 Next, you will apply the coding abilities you have gained in a project scenario. 

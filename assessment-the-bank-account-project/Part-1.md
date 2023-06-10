@@ -1,3 +1,5 @@
+# Bank account project part 1
+
 ## Overview
 In Part 1 of the project, you will practice working with print statements, loops and 
 `when` expressions to create the bank account project. 

@@ -29,7 +29,8 @@ fun main() {
     // Task 2.1
     var accountBalance = (0..1000).random()
     println("The current balance is $accountBalance dollars.")
-    val money = (0..1000).random()
+    println("Please, enter The amount of money")
+    val money: Int = readln().toInt()
     println("The amount you transferred is $money dollars.")
 
     // Task 2.2
