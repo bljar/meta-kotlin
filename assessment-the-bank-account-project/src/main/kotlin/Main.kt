@@ -13,7 +13,7 @@ fun main() {
     // Task 1.3
     while (accountType == "") {
         println("Choose an option (1, 2 or 3)")
-        userChoice = (1..5).random()
+        userChoice = readln().toInt()
         println("The selected option is $userChoice")
         accountType = when (userChoice) {
             1 -> "debit"
