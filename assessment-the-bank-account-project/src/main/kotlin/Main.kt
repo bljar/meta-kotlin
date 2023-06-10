@@ -1,13 +1,19 @@
 fun main() {
+    // Task 1.1
     println("Welcome to your banking system.\n" +
             "What type of account would you like to create?\n" +
             "1. Debit account\n" +
             "2. Credit account\n" +
             "3. Checking account")
+
+    // Task 1.2
     var accountType = ""
+    var userChoice: Int
+
+    // Task 1.3
     while (accountType == "") {
         println("Choose an option (1, 2 or 3)")
-        val userChoice = (1..5).random()
+        userChoice = (1..5).random()
         println("The selected option is $userChoice")
         accountType = when (userChoice) {
             1 -> "debit"
@@ -16,14 +22,19 @@ fun main() {
             else -> continue
         }
     }
+
+    // Task 1.4
     println("You have created a $accountType account.")
+
     // Task 2.1
     var accountBalance = (0..1000).random()
     println("The current balance is $accountBalance dollars.")
     val money = (0..1000).random()
     println("The amount you transferred is $money dollars.")
+
     // Task 2.2
     var output: Int
+    
     // Task 2.3
     fun withdraw(amount: Int): Int {
         accountBalance -= amount
