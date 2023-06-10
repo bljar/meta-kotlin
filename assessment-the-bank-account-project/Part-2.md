@@ -23,7 +23,7 @@ When val is used the variable value is not re-assignable and this type of variab
 
 1. First create a variable using the “var” keyword to store the account balance. 
 Name the variable for the bank account balance as `accountBalance`. 
-Use the `IntRange.random()` method as (0..1000).random() to generate a random number between 1 and 1000 and 
+Use the `IntRange.random()` method as `(0..1000).random()` to generate a random number between 1 and 1000 and 
 assign it to the accountBalance variable.
     
     <aside>
@@ -34,10 +34,10 @@ assign it to the accountBalance variable.
     
 2. Print the account balance to the console.
 Use string interpolation to access the value of the `accountBalance` variable inside the print statement.
-3. Then create a constant using the “val” keyword to store the amount of money used for account withdrawals and deposits and name it money.
-Use the `IntRange.random()` method as `(0..1000).random()` to generate a random number between 1 and 1000 and assign it to the money constant.
+3. Then create a constant using the “val” keyword to store the amount of money used for account withdrawals and deposits and name it `money`.
+Use the `IntRange.random()` method as `(0..1000).random()` to generate a random number between 1 and 1000 and assign it to the `money` constant.
 4. Print the account balance and amount to be deposited/withdrawn to the console. 
-Use string interpolation to access the value of the money constant inside the print statement.
+Use string interpolation to access the value of the `money` constant inside the print statement.
 
 ### Step 2: Create a test variable
 Create a variable for the output of the functions that we will define in the next step to handle the bank account’s operations such as deposits and withdrawals. Name the variable `output` and set its value to 0 (Zero). You will use this variable to test the output of the withdrawal and deposit functions when you run them. (You implement those functions in the next steps.)
@@ -69,7 +69,7 @@ Use an else/if statement inside the `debitWithdraw(...)` function’s body to ch
 
 1. `if` **block:** Check if the `accountBalance` variable’s value is 0 to determine if there are funds available in the account. Print "**Can't withdraw, no money on this account!**" inside the if block. Return the `accountBalance` variable’s value.
 2. `else if` **block:** Check if the `amount` parameter’s value is greater than the `accountBalance` variable value to evaluate if there is enough money in the account to perform the withdrawal. Print "**Not enough money on this account! The checking balance is** `${accountBalance}` **dollars.**". Return 0 from the `debitWithdraw(...)` function inside the else if block. This means that no money has been withdrawn because the account’s balance is lower than the withdrawal amount.
-3. `else` **block:** Finally, call the **withdraw(...)** function with the amount parameter’s value as its argument and return its output from the `debitWithdraw(...)` function inside the else block. This means that the user can continue with the withdrawal because the amount of money they want to withdraw is less than or equal to the account’s balance.
+3. `else` **block:** Finally, call the `withdraw(...)` function with the amount parameter’s value as its argument and return its output from the `debitWithdraw(...)` function inside the else block. This means that the user can continue with the withdrawal because the amount of money they want to withdraw is less than or equal to the account’s balance.
 
 ### Step 6: Test the withdrawal operation
 Now test the function that handles the logic of the withdrawal operation for debit bank accounts.
@@ -78,8 +78,8 @@ The logic for the debit withdraw process is explained in this diagram.
 
 ![BP-LOGIC-002.png](img/BP-LOGIC-002.png)
 
-1. Call the `debitWithdraw(...)`  function with the value of the money variable as its argument and assign its result to the output variable.
-2. Print the output of the `debitWithdraw(...)` function to the console. Use string interpolation to access the value of the output variable inside the print statement.
+1. Call the `debitWithdraw(...)`  function with the value of the money variable as its argument and assign its result to the `output` variable.
+2. Print the output of the `debitWithdraw(...)` function to the console. Use string interpolation to access the value of the `output` variable inside the `print` statement.
 
 ### Step 7: The deposit operation for checking and debit accounts
 Next, you will implement a function that handles the deposit operation for checking and debit bank accounts.
@@ -88,7 +88,7 @@ Create the function. Name the function `deposit` and assign it one parameter nam
 
 The amount parameter is an integer and the `deposit(...)` function returns an integer, therefore the function definition is `deposit(amount: Int): Int`. The `amount` parameter and the `deposit(...)` function return values that represent the amount of money deposited into the account.
 
-1. Use the addition assignment operator inside the `deposit(...)` function’s body to add the value of the amount parameter to the value of the accountBalance variable and assign the result to the `accountBalance` variable. This means that you are depositing money into the bank account.
+1. Use the addition assignment operator inside the `deposit(...)` function’s body to add the value of the `amount` parameter to the value of the `accountBalance` variable and assign the result to the `accountBalance` variable. This means that you are depositing money into the bank account.
 2. Print the amount of money deposited to your bank account and the account’s updated balance to the console inside the `deposit(...)` function’s body. Use string interpolation to access the value of the `amount` parameter and `accountBalance` variable inside the print statement.
 3. Inside the `deposit(...)` function’s body, return the `amount` parameter’s value from the `deposit(...)` function.
 
@@ -121,7 +121,7 @@ The logic for this operation is illustrated in the diagram below.
 Finally, test the function that handles the logic of the deposit operation for credit bank accounts. 
 You can see the overall logic of the process in the diagram below.
 
-![BP-Flowchart-Deposit.png](img/BP-Flowchart-Deposit.png)
+<img src="img/BP-Flowchart-Deposit.png" alt="Flowchart Deposit" width="400"/>
 
 1. Call the `creditDeposit(_:)` function with the `money` variable’s value as its argument and 
 assign its result to the `output` variable.
