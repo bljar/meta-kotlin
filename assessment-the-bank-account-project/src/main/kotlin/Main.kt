@@ -133,10 +133,9 @@ fun main() {
                 "2. Withdraw money\n" +
                 "3. Deposit money\n" +
                 "4. Close the app\n" +
-                "\n" +
                 "Which option do you choose? (1, 2, 3 or 4)"
         )
-        option = (1..5).random()
+        option = readln().toInt()
         println("The selected option is ${option}.")
         when (option) {
             1 -> println("The current balance is $accountBalance dollars.")
