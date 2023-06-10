@@ -33,8 +33,8 @@ fun main() {
     println("The amount you transferred is $money dollars.")
 
     // Task 2.2
-    var output: Int
-    
+    //var output: Int
+
     // Task 2.3
     fun withdraw(amount: Int): Int {
         accountBalance -= amount
@@ -43,8 +43,8 @@ fun main() {
     }
 
     // Task 2.4
-    output = withdraw(money)
-    println("The amount you withdrew is $output dollars.")
+    //output = withdraw(money)
+    //println("The amount you withdrew is $output dollars.")
 
     // Step 2.5
     fun debitWithdraw(amount: Int): Int {
@@ -61,8 +61,8 @@ fun main() {
     }
 
     // Task 2.6
-    output = debitWithdraw(money)
-    println("The amount you withdrew is $output dollars.")
+    //output = debitWithdraw(money)
+    //println("The amount you withdrew is $output dollars.")
 
     // Task 2.7
     fun deposit(amount: Int): Int {
@@ -72,8 +72,8 @@ fun main() {
     }
 
     // Task 2.8
-    output = deposit(money)
-    println("The amount you deposited is $output dollars.")
+    //output = deposit(money)
+    //println("The amount you deposited is $output dollars.")
 
     // Task 2.9
     fun creditDeposit(amount: Int): Int {
@@ -93,6 +93,6 @@ fun main() {
     }
 
     // Task 2.10
-    output = creditDeposit(money)
-    println("Credit deposit output: $output")
+    //output = creditDeposit(money)
+    //println("Credit deposit output: $output")
 }
