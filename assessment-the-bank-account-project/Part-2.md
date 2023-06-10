@@ -12,24 +12,12 @@ handle the logic of account withdrawals and deposits.
 Your completed code will create an output similar to:
 
 ## Instructions
-<aside>
-💡 **Tips and resources**
-
-- *Use functions to create bank account operations. Refer to*
-    - *Introduction to functions*
-    - *Defining and using functions*
-    - *Functions with parameters and results*
-    - *[**Variable scope and local functions**](https://www.notion.so/Variable-scope-and-local-functions-b9d73147bd8c443493ee5d37e90175da?pvs=21)*
-    - [Examples of functions with parameters and results](https://www.notion.so/Examples-of-functions-with-parameters-and-results-9bf87e0cc1214587a0b5e1bb28212511?pvs=21)
-- *Use conditional statements to implement the logic of account withdrawals and deposits. Refer to*
-    - Conditional statements: if and if-else
-</aside>
 
 ### Step 1: Create constants and variables
 <aside>
-💡 **Tip:** *In Kotlin you can use the keywords var and val to create variables. 
+💡 Tip: In Kotlin you can use the keywords var and val to create variables. 
 If var is used then the variable is re-assignable, which means its value can be changed. 
-When val is used the variable value is not re-assignable and this type of variable is often known as a constant.*
+When val is used the variable value is not re-assignable and this type of variable is often known as a constant.
 
 </aside>
 
@@ -39,7 +27,7 @@ Use the `IntRange.random()` method as (0..1000).random() to generate a random nu
 assign it to the accountBalance variable.
     
     <aside>
-    💡 **Note:** Remember that you are generating random numbers for the user’s input because 
+    💡 Note: Remember that you are generating random numbers for the user’s input because 
    playgrounds can’t process user input by default.
     
     </aside>
@@ -51,17 +39,10 @@ Use the `IntRange.random()` method as `(0..1000).random()` to generate a random 
 4. Print the account balance and amount to be deposited/withdrawn to the console. 
 Use string interpolation to access the value of the money constant inside the print statement.
 
-<aside>
-💡 **Tip:** *Refer to the [**More on variables**](https://www.notion.so/More-on-variables-090076a662d34b92bbe8aaaced26d0f3?pvs=21)*
-
-</aside>
-
 ### Step 2: Create a test variable
-
 Create a variable for the output of the functions that we will define in the next step to handle the bank account’s operations such as deposits and withdrawals. Name the variable `output` and set its value to 0 (Zero). You will use this variable to test the output of the withdrawal and deposit functions when you run them. (You implement those functions in the next steps.)
 
 ### Step 3: The withdrawal operation for checking and credit bank accounts
-
 Next, define the function that handles the logic of the withdrawal operation for checking and credit bank accounts.
 
 1. Name the function `withdraw` and assign it one parameter named `amount`. The amount parameter is an integer and the function would also return an integer, hence the definition would be `withdraw(amount: Int): Int`. The `amount` parameter and `withdraw(...)` function’s returned value represents the amount of money withdrawn from the account.
@@ -70,14 +51,12 @@ Next, define the function that handles the logic of the withdrawal operation for
 4. Return the `amount` parameter’s value from the `withdraw(...)` function inside the function’s body.
 
 ### Step 4: Test the withdrawal operation
-
 Now, test the function that handles the logic of the withdrawal operation for checking and credit bank accounts.
 
 1. Call the `withdraw(...)` function with the `money` variable’s value as its argument and assign its result to the output variable.
 2. Print the output of the `withdraw(...)` function to the console. Use string interpolation to access the value of the output variable inside the `print` statement.
 
 ### Step 5: The withdrawal operation for debit accounts
-
 Next, implement the function that handles the logic of the withdrawal operation for debit bank accounts. Unlike checking accounts where the balance can be negative, debit bank accounts allow withdrawal only if there is a net positive balance present in the bank account.
 
 **Create the function**
@@ -93,7 +72,6 @@ Use an else/if statement inside the `debitWithdraw(...)` function’s body to ch
 3. `else` **block:** Finally, call the **withdraw(...)** function with the amount parameter’s value as its argument and return its output from the `debitWithdraw(...)` function inside the else block. This means that the user can continue with the withdrawal because the amount of money they want to withdraw is less than or equal to the account’s balance.
 
 ### Step 6: Test the withdrawal operation
-
 Now test the function that handles the logic of the withdrawal operation for debit bank accounts.
 
 The logic for the debit withdraw process is explained in this diagram.
@@ -104,7 +82,6 @@ The logic for the debit withdraw process is explained in this diagram.
 2. Print the output of the `debitWithdraw(...)` function to the console. Use string interpolation to access the value of the output variable inside the print statement.
 
 ### Step 7: The deposit operation for checking and debit accounts
-
 Next, you will implement a function that handles the deposit operation for checking and debit bank accounts.
 
 Create the function. Name the function `deposit` and assign it one parameter named `amount`.
@@ -116,14 +93,12 @@ The amount parameter is an integer and the `deposit(...)` function returns an in
 3. Inside the `deposit(...)` function’s body, return the `amount` parameter’s value from the `deposit(...)` function.
 
 ### Step 8: Test the deposit operation for checking and debit accounts
-
 Now test the function that handles the logic of the deposit operation for checking and debit bank accounts.
 
 1. Call the `deposit(...)` function with the money variable’s value as its argument and assign its result to the output variable.
 2. Print the output of the `deposit(...)` function to the console. Use string interpolation to access the value of the output variable inside the print statement.
 
 ### Step 9: Implement the deposit operation for credit accounts
-
 Next, implement the function that handles the logic of the deposit operation for credit bank accounts.
 
 The logic for this operation is illustrated in the diagram below.
@@ -143,7 +118,6 @@ The logic for this operation is illustrated in the diagram below.
 11. Finally, call the `deposit(...)` function with the `amount` parameter’s value as its argument and return its output from the `creditDeposit(...)` function inside the `else` block of the `creditDeposit(...)` function’s body. This means that the amount of money you deposit to your bank account can only pay off the account partially in this case.
 
 ### Step 10: Test the deposit operation
-
 Finally, test the function that handles the logic of the deposit operation for credit bank accounts. 
 You can see the overall logic of the process in the diagram below.
 
@@ -155,18 +129,16 @@ assign its result to the `output` variable.
 Use string interpolation to access the value of the `output` variable inside the `print` statement.
 
 ### Step 11: Run your code
-
 Run your program and write down the output.
 
 The first printed statement should read: “**The checking balance is 210 dollars.**”.
 
 <aside>
-💡 **Note:** Since you use random numbers to generate the bank account’s balance, your output may have a different dollar value.
+💡 Note: Since you use random numbers to generate the bank account’s balance, your output may have a different dollar value.
 
 </aside>
 
 ## Concluding thoughts
-
 In this part two of the bank app project, you worked with functions and conditional statements to create your bank apps’ operations. 
 You will use these operations to manage your bank account in the final part of the project.
 
