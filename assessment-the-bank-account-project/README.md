@@ -55,6 +55,8 @@ After a bank account is created and operations are defined, process user input c
 - For a money transfer, use conditional statements to select the bank account’s operation based on the bank account’s type. 
 - Use `when` expressions to choose the right bank account operation from the list of valid bank account operations.
 
+[Read more](./Part-3.md)
+
 ## Learning aims
 The purpose of this project is to:
 - Evaluate your understanding of key learning objectives. 
