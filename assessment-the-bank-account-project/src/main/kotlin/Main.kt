@@ -95,4 +95,57 @@ fun main() {
     // Task 2.10
     //output = creditDeposit(money)
     //println("Credit deposit output: $output")
+
+    // Task 3.2
+    fun transfer(mode: String) {
+        val transferAmount: Int
+        when (mode) {
+            "withdraw" -> {
+                transferAmount = if (accountType == "debit") {
+                    debitWithdraw(money)
+                } else {
+                    withdraw(money)
+                }
+                println("The amount you withdrew is $transferAmount dollars.")
+
+            }
+            "deposit" -> {
+                transferAmount = if (accountType == "credit") {
+                    creditDeposit(money)
+                } else {
+                    deposit(money)
+                }
+                println("The amount you deposited is $transferAmount dollars.")
+            }
+            else -> return
+        }
+    }
+
+    // Task 3.3
+    var isSystemOpen = true
+    var option: Int
+
+    // Task 3.4
+    while (isSystemOpen) {
+        println("What would you like to do?\n" +
+                "1. Check bank account balance\n" +
+                "2. Withdraw money\n" +
+                "3. Deposit money\n" +
+                "4. Close the app\n" +
+                "\n" +
+                "Which option do you choose? (1, 2, 3 or 4)"
+        )
+        option = (1..5).random()
+        println("The selected option is ${option}.")
+        when (option) {
+            1 -> println("The current balance is $accountBalance dollars.")
+            2 -> transfer("withdraw")
+            3 -> transfer("deposit")
+            4 -> {
+                isSystemOpen = false
+                println("The system is closed.")
+            }
+            else -> continue
+        }
+    }
 }
