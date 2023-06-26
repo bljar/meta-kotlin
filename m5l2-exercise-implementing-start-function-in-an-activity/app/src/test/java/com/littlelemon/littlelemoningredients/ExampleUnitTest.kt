@@ -1,4 +1,4 @@
-package com.example.littlelemoningredients
+package com.littlelemon.littlelemoningredients
 
 import org.junit.Test
 

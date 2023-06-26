@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.littlelemoningredients'
+    namespace 'com.littlelemon.littlelemoningredients'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.littlelemoningredients"
+        applicationId "com.littlelemon.littlelemoningredients"
         minSdk 16
         targetSdk 33
         versionCode 1

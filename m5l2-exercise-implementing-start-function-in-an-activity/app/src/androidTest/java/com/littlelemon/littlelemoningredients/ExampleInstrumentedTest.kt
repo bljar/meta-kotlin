@@ -1,4 +1,4 @@
-package com.example.littlelemoningredients
+package com.littlelemon.littlelemoningredients
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
