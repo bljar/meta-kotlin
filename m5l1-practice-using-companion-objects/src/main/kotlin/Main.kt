@@ -14,3 +14,13 @@ class TaxCalculator {
 
     }
 }
+
+fun main() {
+    val orderItem = listOf(
+        OrderItem("Burger", 8.00),
+        OrderItem("Fries", 4.00),
+        OrderItem("Soda", 2.00),
+        OrderItem("Ice Cream", 4.00)
+    )
+    println(TaxCalculator.getTaxAmountForOrderItems(orderItem))
+}
