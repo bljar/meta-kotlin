@@ -7,7 +7,9 @@ class TaxCalculator {
         val salesTaxPercentage = 15.0
 
         fun getTaxAmountForOrderItems(orderItemList: List<OrderItem>): Double {
-
+            var orderAmount = 0.00
+            orderItemList.forEach { orderAmount += it.price }
+            return orderAmount * salesTaxPercentage / 100.00
         }
 
     }
