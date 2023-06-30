@@ -8,7 +8,7 @@ fun Dish.printIngredients() {
 }
 
 fun Dish.removeSalt() {
-    this.ingredients -= "Salt"
+    this.ingredients.remove("Salt")
 }
 
 fun main() {
