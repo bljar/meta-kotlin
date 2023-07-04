@@ -12,4 +12,6 @@ fun main() {
         Order(4, "September", 57),
         Order(5, "October", 38),
     )
+    val aggregateSalesTaxForSeptember = orderList
+        .filter { order -> order.month == "September" }
 }
