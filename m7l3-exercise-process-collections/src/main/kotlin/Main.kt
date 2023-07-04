@@ -14,4 +14,5 @@ fun main() {
     )
     val aggregateSalesTaxForSeptember = orderList
         .filter { order -> order.month == "September" }
+        .map { order -> 9.5 / 100 * order.amount}
 }
